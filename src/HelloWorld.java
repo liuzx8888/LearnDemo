@@ -2,7 +2,8 @@
 public class HelloWorld {
 
 	static int i=9;
-	
+	static long i1=0; 
+	static long i2=0;
 	
 	public static void main (String[] args) {
 		
@@ -33,8 +34,12 @@ public class HelloWorld {
 		printInfo(6);		
 		printInfo((float) .866666666);			
 		printInfo(sum(100));
-		
+	
 		arrNums(1,2,3,4,5,6);
+		
+		forEach(1,2,3,4,5,6);
+		
+		printInfo(addall(30));
 	
 	}
 	/*
@@ -86,11 +91,38 @@ public class HelloWorld {
     	System.out.println(args.length);
     	
     }
+    /*
+     * 
+     * Foreach Ñ­»·
+     * 
+     */
+    
+    public static void forEach (int... args) {
+    	for(int j : args) {
+    		System.out.println(j);
+    		
+    	}
+    	
+    }
 	
 	
-	
-}
-	
+    public static long addall (int i) {
+    
+    for (int k=0;k<=i;k++) {
+    	for (int j=0;j<=k;j++) {
+    		if(j==1) {
+    		  i1=1;	
+    		}
+    		else {
+    		i1 = i1 * j;
+    		}	
+    	}
+    	i2=i2+i1;
+    }
+
+         return i2;
+   }
+  }
 	
 	
 	
