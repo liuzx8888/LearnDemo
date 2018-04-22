@@ -33,6 +33,8 @@ public class HelloWorld {
 		printInfo(6);		
 		printInfo((float) .866666666);			
 		printInfo(sum(100));
+		
+		arrNums(1,2,3,4,5,6);
 	
 	}
 	/*
@@ -72,6 +74,18 @@ public class HelloWorld {
 		return x + sum(x-1);
     	}
 	}
+    
+    
+   /*
+    * 
+    * 数组的传递应用
+    * 
+    */
+    
+    public static void arrNums(int... args) {
+    	System.out.println(args.length);
+    	
+    }
 	
 	
 	
