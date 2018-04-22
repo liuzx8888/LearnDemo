@@ -41,6 +41,48 @@ public class StringDemo {
 	 */
 	  System.out.println(str2.indexOf("L")); 
 	  System.out.println(str2.indexOf("L",3));
+	  
+	/**
+	 *  ×Ö·û´®½ØÈ¡
+	 */
+	  System.out.println(str2.substring(0, 3));
+	  
+		/**
+		 *  ×Ö·û´®·Ö¸î
+		 */	  
+	   String  ss = "Hello Java";
+	   String sss[] =ss.split(" ");
+	   for(int i=0;i<sss.length;i++) {
+		   System.out.println(sss[i]);
+	   }
+	  
+		/**
+		 *  ×Ö·û´®´óÐ¡Ð´
+		 */	
+	   String dxx ="DDDhhhhhDDKF;LK;LKLK";
+	   System.out.println(dxx.toLowerCase());
+	   System.out.println(dxx.toUpperCase());	
+	
+		/**
+		 *  ×Ö·û´®ºöÂÔ´óÐ¡Ð´
+		 */		   
+	   String dxx1 =  "dddhhhhhddkf;lk;lklk";
+	   String dxx2 =  "DDDHHHHHDDKF;LK;LKLK";
+	   System.out.println(dxx1.equals(dxx2));	   
+	   System.out.println(dxx1.equalsIgnoreCase(dxx2));
+		/**
+		 *  ×Ö·û´®ÅÐ¶Ï¿ªÍ·½áÎ²
+		 */		   	   
+	   System.out.println(dxx1.startsWith("aa"));
+	   System.out.println(dxx1.endsWith("lk"));	  
+	   
+	    /*
+	     * 
+	     *×Ö·û´®Ìæ»»
+	     * 
+	     */
+	  System.out.println(dxx1.replaceAll("h", "i"));
+	  System.out.println(dxx1.replace("d", "g")); 
    }	
 
 }
