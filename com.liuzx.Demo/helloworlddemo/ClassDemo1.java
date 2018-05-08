@@ -1,3 +1,4 @@
+package helloworlddemo;
 
 public class ClassDemo1 {
    String str1 ="Hello";	
