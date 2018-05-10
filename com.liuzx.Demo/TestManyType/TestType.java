@@ -10,6 +10,16 @@ public  static void main (String[] agrs) {
 	C c  = new C();     //生成C类实例
 	D d  = new D();     //生成D类实例   
 
+	
+	/*向下转型*/
+	B b1 = (B) new A();
+	
+/*	
+	System.out.println(b1.show(a1));	
+	System.out.println(b1.show(b));	
+	System.out.println(b1.show(c));	
+	System.out.println(b1.show(d));*/		
+	
 	System.out.println(a1.show(b));   /*对象调用方法，但是没有对应的方法，但是 B类继承A类，调用show (A  obj)   		:A AND A*/ 
     System.out.println(a1.show(c));   /*对象调用方法，但是没有对应的方法，但是C继承B类，B类继承A类，调用show (A  obj)  :A AND A*/     
     System.out.println(a1.show(d));   /*对象调用方法，有对于的方法 调用 show (D  obj)  :A AND D*/     
