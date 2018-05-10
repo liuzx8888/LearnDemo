@@ -11,8 +11,19 @@ public  static void main (String[] agrs) {
 	D d  = new D();     //生成D类实例   
 
 	
-	/*向下转型*/
-	B b1 = (B) new A();
+	/*向下转型
+	 *子类引用 子类对象 = （子类引用）父类对象
+	 *B b1 = (B) new A();
+	 *Exception in thread "main" java.lang.ClassCastException: TestManyType.A cannot be cast to TestManyType.B
+	  at TestManyType.TestType.main(TestType.java:23)
+	 *
+	 *向下转型 必须要先往上转型
+	 *：父类不知道子类的类型，所以转换的时候报错
+	 * 所以需要先把 B类向上转型，跟A类建立好关系后，再向下转型成B类才不报错
+	 * 
+	 * 
+	 * */
+      B b1 = (B) a2;
 	
 /*	
 	System.out.println(b1.show(a1));	
