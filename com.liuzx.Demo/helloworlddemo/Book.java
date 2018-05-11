@@ -13,6 +13,7 @@ public class Book {
 		this.name = name;
 		this.price = price;
 	}
+	
 	public String getName() {
 		return name;
 	}
@@ -36,6 +37,10 @@ public class Book {
 	}
 	public void setPerson(Person person) {
 		this.person = person;
+	}
+	@Override
+	public String toString() {
+		return "Book [name=" + name + ", anthor=" + anthor + ", price=" + price + ", person=" + person + "]";
 	}	
 	
 	
