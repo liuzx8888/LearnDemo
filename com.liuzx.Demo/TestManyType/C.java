@@ -1,5 +1,5 @@
 package TestManyType;
 
-public class C extends B{
+public class C extends B {
 
 }

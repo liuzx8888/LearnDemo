@@ -1,24 +1,19 @@
 package designmode;
 
-public  class FactoryMode {
-	
-	private static Car  car =null;
+public class FactoryMode {
 
-	public static  Car getInstance (String name) {
+	private static Car car = null;
+
+	public static Car getInstance(String name) {
 		if ("Car1".equals(name)) {
-			car= new Car_1("吉利", "Vovol", "Yellow", 13000);	
+			car = new Car_1("吉利", "Vovol", "Yellow", 13000);
 		}
-		
+
 		if ("Car2".equals(name)) {
-			car= new Car_1("比亚吉", "秦", "Red", 23000);	
-		}	
+			car = new Car_1("比亚吉", "秦", "Red", 23000);
+		}
 		return car;
-		
+
 	}
 
-
-
-
-
-	
 }

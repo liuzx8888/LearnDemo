@@ -10,7 +10,7 @@ public class StaticCodeDemo1 {
 	/*
 	 * 静态代码块只执行一次
 	 */
-	
+
 	static {
 		System.out.println("0.构造代码快");
 	}
@@ -18,15 +18,15 @@ public class StaticCodeDemo1 {
 	private StaticCodeDemo1() {
 		// TODO Auto-generated constructor stub
 		System.out.println("2.构造方法");
-	}	
-	
+	}
+
 	private static StaticCodeDemo1 staticCodeDemo1 = new StaticCodeDemo1();
 
 	/*
 	 * 单例模式
 	 */
-	public static StaticCodeDemo1 getinstance () {
+	public static StaticCodeDemo1 getinstance() {
 		return staticCodeDemo1;
 	}
-	
+
 }
