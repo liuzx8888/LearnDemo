@@ -17,7 +17,7 @@ public class TestDemo {
 		 
 		 String username;String password;		 
 		 RealInternet realInternet = new RealInternet();
-		 realInternet.login("liuzx", "445566");
+		 realInternet.login("liuzx", "112233");
 		 username =realInternet.getLoginName();
 		 password =realInternet.getPassWord();
 		 Internet ProxyInternet = new ProxyInternet(realInternet);
