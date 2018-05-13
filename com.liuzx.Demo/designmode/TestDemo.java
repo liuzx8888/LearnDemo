@@ -15,7 +15,8 @@ public class TestDemo {
 		 car.Type();
 
 		 
-		 String username;String password;		 
+		 String username;
+		 String password;		 
 		 RealInternet realInternet = new RealInternet();
 		 realInternet.login("liuzx", "112233");
 		 username =realInternet.getLoginName();
