@@ -13,6 +13,10 @@ public class ThreadDemo1 implements Runnable {
 		super();
 		this.name = name;
 	}
+	/*
+	 * 安全锁 1.可以在方法上直接使用 synchronized
+	 *      2.可以在调用的地方写同步块
+	 */
 
 	public synchronized void sale() {
 		if (ticketcount > 0) {
