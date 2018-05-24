@@ -1,27 +1,23 @@
 package iodemo;
 
 import java.io.IOException;
-import java.io.PipedInputStream;
-import java.io.PipedOutputStream;
 
 public class ThreadmainDemo {
 	public static void main(String[] args) {
-		PipedInputStream in = new PipedInputStream();
-		PipedOutputStream out = new PipedOutputStream();
-		ThreadInDemo inDemo = new ThreadInDemo();
-		ThreadOutDemo outDemo = new ThreadOutDemo();
-		new ThreadInDemo().receive(in);
-		new ThreadOutDemo().send(out);
+		ThreadinPrint threadinPrint = new ThreadinPrint();
+		ThreadoutPrint threadoutPrint = new ThreadoutPrint();
+		Thread inthread = new Thread(threadinPrint);
+		Thread outthread = new Thread(threadoutPrint);
 
 		try {
-			out.connect(in);
+			threadoutPrint.getOutputStream().connect(threadinPrint.getInputStream());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
-		new Thread(inDemo).start();
-		new Thread(outDemo).start();
+		outthread.start();
+		inthread.start();
 
 	}
+
 }
