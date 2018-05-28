@@ -22,9 +22,7 @@ public class SystemSetout {
 		PrintStream printStream = new PrintStream(stream);
 		System.setOut(printStream);
 		System.out.println("Hello Print SetOut");
-		
-		
-		
+
 	}
 
 }

@@ -11,8 +11,8 @@ public class SystemSetIn {
 		InputStream inputStream = new FileInputStream(f1);
 		System.setIn(inputStream); /* 修改了 System in 的位置 */
 
-		InputStream inputStream1 = System.in; 
-		StringBuffer buffer = new StringBuffer();  /*引用类型  经常犯错！！！！*/
+		InputStream inputStream1 = System.in;
+		StringBuffer buffer = new StringBuffer(); /* 引用类型 经常犯错！！！！ */
 		int temp;
 		while ((temp = inputStream1.read()) != -1) {
 			buffer.append((char) temp);
