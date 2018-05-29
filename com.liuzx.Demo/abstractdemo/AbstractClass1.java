@@ -6,7 +6,6 @@ public abstract class AbstractClass1 {
 	private int age = 30;
 
 	public abstract String fun();
-//
 	public String getName() {
 		return name;
 
