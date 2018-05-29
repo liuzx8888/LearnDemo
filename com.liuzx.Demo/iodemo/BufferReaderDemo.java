@@ -12,6 +12,7 @@ public class BufferReaderDemo {
 		Reader reader = new InputStreamReader(System.in);
 		BufferedReader bufferedReader = new BufferedReader(reader);
 		String str = null;
+		
 		System.out.println("ÇëÊäÈëÄÚÈİ£º");
 
 		try {
