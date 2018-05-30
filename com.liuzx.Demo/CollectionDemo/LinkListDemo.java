@@ -31,8 +31,11 @@ public class LinkListDemo {
 		List2.add("ÀîËÄ");
 		List2.add("ÄĞ");
 		List2.add("35");
+		List2.addFirst("Begin");
+		List2.addLast("End");
+		System.out.println(List2.size());
 		for(int i =0 ; i<List2.size()+1;i++) {
-			System.out.println(List2.poll());	
+			System.out.println(i+List2.poll());	
 		}
 		
 	}

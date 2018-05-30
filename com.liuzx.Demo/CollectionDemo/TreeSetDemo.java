@@ -34,7 +34,6 @@ public class TreeSetDemo {
 		persons1.add(new Person1("王五", 31)); /*  加入重复元素，  自定义类去重  Hashset  需要重写  equals HashCode  方法/
 		persons1.add(new Person1("孙六", 31)); /*  加入重复元素*/
 		System.out.println(persons1);		
-		
 	}
 
 }

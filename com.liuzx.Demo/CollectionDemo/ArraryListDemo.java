@@ -2,11 +2,12 @@ package CollectionDemo;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 
 public class ArraryListDemo {
 	public static void main(String[] args) {
-		ArrayList<String> arrlist = new ArrayList<String>();
+		List<String> arrlist = new ArrayList<String>();
 		Collection<String> collection = new ArrayList<String>();
 		arrlist.add("ÕÅÈý");
 		arrlist.add("ÄÐ");
