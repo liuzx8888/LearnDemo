@@ -14,26 +14,26 @@ public class CollectionUntilDemo {
 		Collections.addAll(list, arr);
 		System.out.println(list);
 		/*
-		 *检索功能
-		 */	
+		 * 检索功能
+		 */
 		System.out.println(Collections.binarySearch(list, "29"));
 		/*
-		 *整体替换
-		 */	
+		 * 整体替换
+		 */
 		Collections.replaceAll(list, "张三", "张三3");
-		System.out.println(list);	
-		
+		System.out.println(list);
+
 		/*
-		 *排序
-		 */		
+		 * 排序
+		 */
 		Collections.sort(list);
-		System.out.println(list);	
-		
+		System.out.println(list);
+
 		/*
-		 *交换位置
-		 */			
+		 * 交换位置
+		 */
 		Collections.swap(list, 4, 5);
-		System.out.println(list);	
+		System.out.println(list);
 	}
 
 }
